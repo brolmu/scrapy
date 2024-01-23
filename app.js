@@ -6,5 +6,13 @@ const CSVRESULTPATH = "./dataresult.csv";
 const COL = "nombre";
 
 
+async function main() {
+  try
+  {
+    await cne(COL, CSVPATH, CSVRESULTPATH);
+  } catch (error) {
+    console.error(error);
+  }
+}
 
-cne(COL, CSVPATH, CSVRESULTPATH);
+main();
